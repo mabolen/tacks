@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToes!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 id="turn">Click start to begin</h2>
+        <div class="game-board">
+            <div class="square" id="square-1" onclick="clickedSquare(event.srcElement.id)">
+                <div class="x" id="square-1x">X</div>
+                <div class="o" id="square-1o">O</div>
+            </div>
+            <div class="square" id="square-2" onclick="clickedSquare(event.srcElement.id)">
+                <div class="x" id="square-2x">X</div>
+                <div class="o" id="square-2o">O</div>
+            </div>
+            <div class="square" id="square-3" onclick="clickedSquare(event.srcElement.id)">
+                <div class="x" id="square-3x">X</div>
+                <div class="o" id="square-3o">O</div>
+            </div>
+            <div class="square" id="square-4" onclick="clickedSquare(event.srcElement.id)">
+                <div class="x" id="square-4x">X</div>
+                <div class="o" id="square-4o">O</div>
+            </div>
+            <div class="square" id="square-5" onclick="clickedSquare(event.srcElement.id)">
+                <div class="x" id="square-5x">X</div>
+                <div class="o" id="square-5o">O</div>
+            </div>
+            <div class="square" id="square-6" onclick="clickedSquare(event.srcElement.id)">
+                <div class="x" id="square-6x">X</div>
+                <div class="o" id="square-6o">O</div>
+            </div>
+            <div class="square" id="square-7" onclick="clickedSquare(event.srcElement.id)">
+                <div class="x" id="square-7x">X</div>
+                <div class="o" id="square-7o">O</div>
+            </div>
+            <div class="square" id="square-8" onclick="clickedSquare(event.srcElement.id)">
+                <div class="x" id="square-8x">X</div>
+                <div class="o" id="square-8o">O</div>
+            </div>
+            <div class="square" id="square-9" onclick="clickedSquare(event.srcElement.id)">
+                <div class="x" id="square-9x">X</div>
+                <div class="o" id="square-9o">O</div>
+            </div>
+        </div>
+        <div id="buttons">
+            <button class="btn btn-primary" id="start-button" onclick="startGame()">Start</button>
+            <button class="btn btn-danger" onclick="resetGame()">Reset</button>
+        </div>
+        <div class="alert alert-dark text-center" role="alert" id="alert"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
