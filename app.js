@@ -1,10 +1,11 @@
 //for beginning each game
 $('#alert').hide()
-let turn = 'X'
+let turn
 let started = false
 const startGame = () => {
     if (!started) {
         started = true
+        turn = Math.floor(Math.random() * 10) >= 5 ? 'X' : 'O'
         $('#turn').text(`It's ${turn}'s turn`)
         $('#start-button').hide()
     }
